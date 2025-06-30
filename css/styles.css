@@ -1,0 +1,57 @@
+
+body {
+    background-color: #fddde1;
+    font-family: 'Segoe UI', sans-serif;
+}
+h1, h2 {
+    color: #f44336;
+    font-weight: bold;
+}
+.card {
+    margin-bottom: 20px;
+    transition: transform 0.2s ease-in-out;
+}
+.zoom:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.categoria {
+    margin-top: 40px;
+}
+
+@keyframes flash {
+    0% { background-color: #007bff; }
+    50% { background-color: #28a745; }
+    100% { background-color: #007bff; }
+}
+
+.button-flash {
+    animation: flash 0.4s ease;
+}
+
+.btn-rosita {
+    background-color: #f8c8dc;  /* Rosita suave tipo pastel */
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-rosita:hover {
+    background-color: #f48fb1; /* Un poco más fuerte al hacer hover */
+    color: #fff;
+}
+
+/* Hide these elements by default */
+.show-on-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .show-on-mobile {
+    display: flex !important;
+  }
+}
